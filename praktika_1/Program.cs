@@ -29,7 +29,7 @@ namespace praktika_1
         static public int[,] ReadfromFile(ref int m, ref int n)
         {
             string line;
-            using (StreamReader reader = new StreamReader("input.txt", Encoding.Default))
+            using (StreamReader reader = new StreamReader("INPUT.TXT", Encoding.Default))
             {
                 if (reader.Peek() == -1)
                 {
@@ -98,7 +98,7 @@ namespace praktika_1
                 }
             }
             Console.WriteLine("\nOUTPUT.TXT\n\n" + result[n - 1, m - 1]);
-            using (StreamWriter sw = new StreamWriter("output.txt"))
+            using (StreamWriter sw = new StreamWriter("OUTPUT.TXT"))
             {
                 sw.WriteLine(result[n - 1, m - 1]);
             }
