@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Text;
 
@@ -22,19 +22,19 @@ namespace praktika_1
             {
                 Console.WriteLine("Файл заполнен неверно!");
             }
-            Console.ReadKey();
+            Console.ReadLine();
             Environment.Exit(0);
             return -1;
         }
         static public int[,] ReadfromFile(ref int m, ref int n)
         {
             string line;
-            using (StreamReader reader = new StreamReader("INPUT.TXT", Encoding.Default))
+            using (StreamReader reader = new StreamReader("INPUT.txt", Encoding.Default))
             {
                 if (reader.Peek() == -1)
                 {
                     Console.WriteLine("Файл пуст");
-                    Console.ReadKey();
+                    Console.ReadLine();
                     Environment.Exit(0);
                 }
                 int[,] arr = null;
@@ -56,7 +56,7 @@ namespace praktika_1
                 catch
                 {
                     Console.WriteLine("\n\nФайл заполнен неверно");
-                    Console.ReadKey();
+                    Console.ReadLine();
                     Environment.Exit(0);
                 }
                 return arr;
@@ -102,7 +102,7 @@ namespace praktika_1
             {
                 sw.WriteLine(result[n - 1, m - 1]);
             }
-            Console.ReadKey();
+            Console.ReadLine();
         }
     }
 }
