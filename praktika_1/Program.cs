@@ -6,7 +6,6 @@ namespace praktika_1
 {
     class Program
     {
-        static public int x=0, y=0, count=0;
         static public int InputNumber(string line, int left = 0, int right = 100)
         {
             int num = 0;
